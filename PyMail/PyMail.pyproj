@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d275e182-41f0-4a97-92ab-4a749f1463b5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PyMail.py</StartupFile>
+    <StartupFile>mailQT界面版本\TheLoginWindow.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PyMail</Name>
     <RootNamespace>PyMail</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda37-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PyMail.py" />
+    <Folder Include="mailQT界面版本\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mailQT界面版本\untitled.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mailQT界面版本\TheLoginWindow.py" />
+    <Compile Include="mailQT界面版本\TheMainWindow.py" />
+    <Compile Include="mailQT界面版本\TheSendMailWindow.py" />
+    <Compile Include="mailQT界面版本\untitled.py" />
+    <Compile Include="mail终端无UI界面.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda37-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
